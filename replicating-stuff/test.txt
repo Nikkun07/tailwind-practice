@@ -1,9 +1,7 @@
 This is just a test 
-bruh
 
 I will kill myself if this does not work
 
 
 //Test Brach update
-
 This is a test branch
