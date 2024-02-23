@@ -1,0 +1,5 @@
+When doing a product modal, place image inside a div so it does not stretch.
+
+<div>
+    <img src="images/image.png" alt="" class="mx-auto hover:scale-105 duration-200 w-60">
+</div>
