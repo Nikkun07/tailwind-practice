@@ -1,1 +1,3 @@
 Use directives to use default styling.
+
+Name IDs that makes sense. Do not use names that contents might be changed later. (Reusability)
