@@ -628,6 +628,10 @@ h5 {
   top: 12rem;
 }
 
+.z-40 {
+  z-index: 40;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -665,6 +669,10 @@ h5 {
 
 .mt-32 {
   margin-top: 8rem;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -915,6 +923,58 @@ h5 {
     background-image: url('../images/mobile/image-hero.jpg');
     background-position: center;
   }
+}
+
+/* Hamburger Menu */
+
+.hamburger{
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-mid,
+.hamburger-bot{
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-mid{
+  transform: translateY(7px);
+}
+
+.hamburger-bot{
+  transform: translateY(14px);
+}
+
+.open{
+  transform: rotate(90deg);
+}
+
+.open .hamburger-top{
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-mid{
+  display:none;
+}
+
+.open .hamburger-bot{
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .group:hover .group-hover\:scale-110 {
