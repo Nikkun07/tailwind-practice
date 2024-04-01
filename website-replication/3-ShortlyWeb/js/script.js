@@ -1,11 +1,28 @@
+/* Var Declarations */
+
+const btn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu');
 
 const linkForm = document.getElementById('link-form');
 const errMsg = document.getElementById('err-msg');
 const linkInput = document.getElementById('link-input');
 
+
+btn.addEventListener('click', navToggle);
 linkForm.addEventListener('submit', formSubmit);
 
+/* Functions */
 
+//Mobile Menu Toggle
+function navToggle()
+{
+    btn.classList.toggle('open');
+    menu.classList.toggle('flex');
+    menu.classList.toggle('hidden');
+}
+
+
+//URL Validations
 function validURL(str){
     var pattern = new RegExp(
         '^(https?:\\/\\/)?' + // protocol
