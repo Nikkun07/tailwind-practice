@@ -809,6 +809,11 @@ video {
   color: hsl(257 7% 63% / var(--tw-text-opacity));
 }
 
+.text-red {
+  --tw-text-opacity: 1;
+  color: hsl(0 87% 67% / var(--tw-text-opacity));
+}
+
 .text-veryDarkViolet {
   --tw-text-opacity: 1;
   color: hsl(260 8% 14% / var(--tw-text-opacity));
@@ -817,11 +822,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-red {
-  --tw-text-opacity: 1;
-  color: hsl(0 87% 67% / var(--tw-text-opacity));
 }
 
 .placeholder-yellow-400::-moz-placeholder {
