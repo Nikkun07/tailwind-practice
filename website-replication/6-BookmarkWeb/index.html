@@ -5,17 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/style.css">
-    <title>Simple Tailwind Study</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Bookmark</title>
 </head>
-<body>
-    <!--Container-->
-    <!--Delete this later if you need to-->
-    <div class="flex items-center justify-center min-h-screen bg-slate-700 p-9">
-        <div class="p-9 rounded-2xl items-center justify-center text-slate-600 bg-white text-center md:text-left space-y-3">
-            <h1 class="font-black text-2xl">TEMPLATE</h1>
-            <p class="">This is a template for the Tailwind webpack environment (Includes PostCSS).</p>
+<body class="overflow-x-hidden">
+    <!--Nav Container-->
+    <nav class="container relative mx-auto p-6">
+        <!-- Container for Nav Items -->
+        <div class="flex items-center justify-between space-x-20 my-6">
+            <!-- Logo -->
+                <div class="z-30">
+                    <a href="#">
+                        <img src="images/logo-bookmark.svg" alt="" id="logo">
+                    </a>
+                </div>
+            <!-- Menu Items -->
+                <div class="hidden items-center space-x-10 uppercase text-grayishBlue md:flex">
+                    <a href="#features" class="tracking-widest hover:softRed">Features</a>
+                    <a href="#download" class="tracking-widest hover:softRed">Download</a>
+                    <a href="#faq" class="tracking-widest hover:softRed">FAQ</a>
+                    <a href="#" class="px-8 py-2 text-white bg-softRed border-2 border-softRed rounded-lg shadow-md hover:text-softRed hover:bg-white">Login</a>
+                </div>
         </div>
-    </div>
-    <!--Delete Until here-->
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <!-- Container for image & content -->
+        <div class="container flex flex-col-reverse mx-auto p-6 lg:flex-row lg:mb-0">
+            <!-- Content -->
+                <div class="flex flex-col space-y-10 lg:mt-16 lg:w-1/2">
+                    <h1 class="text-3xl font-bold text-center lg:text-6xl lg:text-left">
+                        A Simple Bookmark Manager
+                    </h1>
+                    <p class="max-w-md mx-auto text-lg text-center text-gray-400 lg:text-2xl lg:text-left lg:mt-0 lg:mx-0">
+                        A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.
+                    </p>
+
+                    <!-- buttons container -->
+                    <div class="flex items-center justify-center w-full space-x-4 lg:justify-start">
+                        <a href="#" class="p-4 text-sm font-semibold text-white bg-softBlue rounded shadow-md border-2 border-softBlue md:text-base hover:bg-white hover:text-softBlue">Get it on Chrome</a>
+
+                        <a href="#" class="p-4 text-sm font-semibold text-black bg-gray-300 rounded shadow-md border-2 border-gray-300 md:text-base hover:bg-white hover:text-gray-600">Get it on Firefox</a>
+                    </div>
+                </div>
+
+            <!-- Image -->
+
+            <div class="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
+                <div class="bg-hero"></div>
+                <img src="images/illustration-hero.svg" alt="" class="relative z-10 lg:top-24 xl:top-0 overflow-x-visible">
+            </div>
+        </div>
+    </section>
 </body>
 </html>
