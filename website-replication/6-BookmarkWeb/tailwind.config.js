@@ -19,6 +19,10 @@ module.exports = {
       fontFamily: {
         sams: ['Rubik', 'sans-serif'],
       },
+
+      backgroundImage: () => ({
+        dots: "url('../images/bg-dots.svg')",
+      }),
     },
   },
   plugins: [],
