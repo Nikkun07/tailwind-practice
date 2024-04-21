@@ -4,18 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Simple Tailwind Study</title>
+    <title>Pet Info</title>
 </head>
 <body>
     <!--Container-->
-    <!--Delete this later if you need to-->
-    <div class="flex items-center justify-center min-h-screen bg-slate-700 p-9">
-        <div class="p-9 rounded-2xl items-center justify-center text-slate-600 bg-white text-center md:text-left space-y-3">
-            <h1 class="font-black text-2xl">TEMPLATE</h1>
-            <p class="">This is a template for the Tailwind webpack environment (Includes PostCSS).</p>
+    <section id="main-container" class="flex justify-center px-24 bg-orange-300 min-h-screen md:flex-row md:items-center">
+        <div class="relative flex flex-col m-6 space-y-10 bg-white shadow-2xl rounded-2xl md:flex-row md:space-y-0 md:m-0">
+            <!-- Container Left -->
+            <div class="p-6 md:p-20 text-slate-800">
+                <!-- Title -->
+                <h1 class="text-4xl font-black uppercase">
+                    Information
+                </h1>
+                <!-- Info Container -->
+                <div class="flex flex-col justify-start space-y-10 mt-8 md:items-center">
+                    <!-- Info Text -->
+                    <div class="flex flex-row text-left">
+                        <h1 class="text-md font-bold mr-5">
+                            Test
+                        </h1>
+                        <span>
+                            Lorem, ipsum dolor.
+                        </span>
+                    </div>
+
+                    <!-- Info Text -->
+                    <div class="flex flex-row text-left ">
+                        <h1 class="text-md font-bold mr-5">
+                            Test
+                        </h1>
+                        <span>
+                            Lorem, ipsum dolor.
+                        </span>
+                    </div>
+                </div>
+                <!-- Next Image Button-->
+
+            </div>
+            <!-- Image Container Right -->
+            <img src="images/rapp.png" alt="" class="w-[430px] rounded-3xl md:rounded-r-2xl">
         </div>
-    </div>
-    <!--Delete Until here-->
+    </section>
 </body>
 </html>

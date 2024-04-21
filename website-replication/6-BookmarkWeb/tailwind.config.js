@@ -17,7 +17,7 @@ module.exports = {
       },
 
       fontFamily: {
-        sams: ['Rubik', 'sans-serif'],
+        sans: ['Rubik', 'sans-serif'],
       },
 
       backgroundImage: () => ({
